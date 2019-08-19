@@ -2,7 +2,6 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   get '/reverse' do
-    
     erb :reverse
   end
 
@@ -16,6 +15,7 @@ class App < Sinatra::Base
     # Write your code here!
     @friends = ['Emily Wilding Davison', 'Harriet Tubman', 'Joan of Arc', 'Malala Yousafzai', 'Sojourner Truth']
     
-  erb :friends
+    erb :friends
   end
+  
 end
